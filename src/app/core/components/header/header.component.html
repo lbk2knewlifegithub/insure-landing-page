@@ -1,0 +1,34 @@
+<!--header-->
+<header>
+  <div class='container'>
+    <!--    navbar mobile-->
+    <nav [class.invisible]='isActiveNavbar' class='flex items-center justify-between py-6'>
+      <div>
+        <img src='/assets/images/logo.svg' alt='Logo'>
+      </div>
+
+      <!--    hamburger-->
+      <div (click)='isActiveNavbar = true' class='cursor-pointer md:hidden'>
+        <img src='/assets/images/icon-hamburger.svg' alt='Hamburger'>
+      </div>
+      <!--    end hamburger-->
+
+      <!--      links-->
+      <ul class='flex items-center hidden gap-8 font-medium tracking-wider uppercase text-muted md:flex'>
+        <li>
+          <a href='#'>How work</a>
+        </li>
+        <li>
+          <a href='#'>Blog</a>
+        </li>
+        <li>
+          <a href='#'>Account</a>
+        </li>
+        <li><a class='btn btn-outline-dark' href='#'>View Plans</a></li>
+      </ul>
+      <!--      end links-->
+    </nav>
+    <!--    end navbar mobile-->
+  </div>
+</header>
+<!--end header-->
