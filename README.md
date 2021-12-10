@@ -1,6 +1,6 @@
 <h1>Frontend mentor <a target="_blank" href="https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8">Insure Landing Page</a></h1>
 
-<a href="https://vigorous-euler-c569c7.netlify.app">
+<a href="https://hungry-goldwasser-bbe99b.netlify.app">
 <p>My site deployed to Netlify</p>
 </a>
 
