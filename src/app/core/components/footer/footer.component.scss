@@ -1,0 +1,15 @@
+.link-group {
+  p {
+    @apply font-medium tracking-wider text-center uppercase text-muted lg:text-left;
+  }
+
+  ul {
+    @apply flex flex-col items-center gap-2 mt-6 font-semibold text-gray-700 uppercase lg:items-start;
+
+    li {
+      a {
+        @apply hover:border-b-2 hover:border-black;
+      }
+    }
+  }
+}

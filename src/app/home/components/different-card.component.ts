@@ -5,26 +5,26 @@ import { Different } from '../models/different.model';
   selector: 'lbk-different-card',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div
-      class="flex flex-col items-center justify-center max-w-lg mx-auto xl:items-start"
-    >
+    <div class="grid gap-6 justify-items-center tablet:gap-8 desktop:justify-items-start">
       <!--  icon-->
       <div>
         <img [src]="different.src" [alt]="different.name" />
       </div>
       <!--  end icon-->
 
-      <!--  name-->
-      <h3 class="text-3xl text-center font-heading mt-10 xl:text-left">
-        {{ different.name }}
-      </h3>
-      <!--  end name-->
+      <div class=" grid gap-4 text-center max-w-md">
+        <!--  name-->
+        <h3 class="text-2xl text-center font-heading tablet:text-3xl desktop:text-left desktop:text-2xl">
+          {{ different.name }}
+        </h3>
+        <!--  end name-->
 
-      <!--  description-->
-      <p class="text-center mt-6 text-muted tracking-wider xl:text-left">
-        {{ different.description }}
-      </p>
-      <!--  end description-->
+        <!--  description-->
+        <p class="text-xs text-center text-muted tracking-wider tablet:text-base desktop:text-left desktop:text-sm">
+          {{ different.description }}
+        </p>
+        <!--  end description-->
+      </div>
     </div>
   `,
 })

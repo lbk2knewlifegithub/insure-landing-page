@@ -1,45 +1,45 @@
-<div class='relative container--large lg:bg-intro'>
+<div class='relative px-0 container-large desktop:bg-intro'>
   <!--    pattern right desktop-->
-  <img class='absolute top-0 right-0 h-full hidden lg:block'
-       src='/assets/images/bg-pattern-intro-right-desktop.svg' alt='Pattern Right'>
+  <img class='absolute top-0 right-0 hidden h-full desktop:block z-[50]' src='/assets/images/bg-pattern-intro-right-desktop.svg'
+    alt='Pattern Right'>
   <!--    end pattern right desktop-->
 
   <!--      pattern left desktop-->
-  <img class='absolute h-full translate-y-1/2 hidden lg:block' src='/assets/images/bg-pattern-intro-left-desktop.svg'
-       alt='Pattern Left'>
+  <img class='absolute hidden h-full translate-y-1/2 desktop:block' src='/assets/images/bg-pattern-intro-left-desktop.svg'
+    alt='Pattern Left'>
   <!--      end pattern left desktop-->
 
-  <div class='container px-0 relative grid lg:gap-8 lg:grid-cols-2 '>
+  <div class='container relative grid px-0 desktop:grid-cols-2'>
     <!--    hero image-->
-    <div class='relative lg:order-last lg:max-w-[80%] lg:top-20'>
-      <img class='w-full object-cover lg:hidden ' src='/assets/images/image-intro-mobile.jpg' alt='Intro'>
-      <img class='w-full hidden lg:block' src='/assets/images/image-intro-desktop.jpg' alt='Intro'>
+    <div class='relative desktop:order-last desktop:max-w-[80%] desktop:top-20'>
+      <img class='object-cover w-full tablet:hidden ' src='/assets/images/image-intro-mobile.jpg' alt='Intro'>
+      <img class='hidden w-full max-h-[800px] object-cover object-center tablet:block'
+        src='/assets/images/image-intro-desktop.jpg' alt='Intro'>
     </div>
     <!--    end hero image-->
 
     <!--      content-->
-    <div class='relative bg-intro lg:bg-transparent lg:px-[2rem]'>
+    <div class='relative bg-intro desktop:bg-transparent'>
       <!--      pattern top left mobile-->
-      <img class='absolute lg:hidden' src='/assets/images/bg-pattern-intro-left-mobile.svg' alt='Pattern Left'>
+      <img class='absolute desktop:hidden' src='/assets/images/bg-pattern-intro-left-mobile.svg' alt='Pattern Left'>
       <!--      end pattern top left mobile-->
 
       <!--      pattern bottom right mobile-->
-      <img class='absolute bottom-0 right-0 translate-y-1/2 lg:hidden'
-           src='/assets/images/bg-pattern-intro-right-mobile.svg' alt='Pattern Right'>
+      <img class='absolute bottom-0 right-0 translate-y-1/2 desktop:hidden'
+        src='/assets/images/bg-pattern-intro-right-mobile.svg' alt='Pattern Right'>
       <!--      end pattern bottom right mobile-->
 
-      <div class='px-[2rem] mt-24 mb-24 flex flex-col items-center text-inverted lg:items-start'>
+      <div class='flex flex-col items-center px-8 mt-24 mb-24 text-inverted desktop:items-start desktop:px-0'>
         <!--        line decorate-->
-        <div class='h-[2px] w-[200px] bg-white mb-20 hidden lg:block'></div>
+        <div class='h-[2px] w-[200px] bg-white/50 mb-20 hidden desktop:block'></div>
         <!--        end line decorate-->
 
-        <h1
-          class='font-black text-4xl text-center font-heading tracking-wide sm:text-5xl lg:text-left lg:text-5xl 2xl:text-7xl'>
+        <h1 class='text-4xl font-black tracking-wide text-center font-heading desktop:text-5xl desktop:text-left'>
           Humanizing
           your
           insurance.</h1>
 
-        <p class='text-center text-inverted mt-6 max-w-lg lg:text-left'>Get your life insurance coverage easier
+        <p class='max-w-xl mt-6 text-center text-inverted desktop:text-left'>Get your life insurance coverage easier
           and faster.
           We blend our
           expertise and
@@ -48,8 +48,8 @@
           the
           plan that's right for you. Ensure you and your loved ones are protected.</p>
 
-        <div class='mt-6 flex justify-center sm:mt-8 lg:justify-start'>
-          <a class='mx-auto btn btn-outline-white px-8 py-2 uppercase text-sm font-bold' href='#'>View plans</a>
+        <div class='flex justify-center mt-6 sm:mt-8 lg:justify-start'>
+          <a class='px-8 py-2 mx-auto text-sm font-bold uppercase btn btn-outline-white' href='#'>View plans</a>
         </div>
       </div>
     </div>

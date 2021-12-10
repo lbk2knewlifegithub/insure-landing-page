@@ -4,11 +4,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'lbk-how-we-work',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div class="relative container--large mt-40 bg-intro flow-root">
+    <div class="relative container my-40 bg-intro flow-root">
       <!--  pattern-->
       <!--  mobile-->
       <img
-        class="absolute top-0 right-0 h-full max-w-[50%] md:hidden"
+        class="absolute top-0 right-0 h-full max-w-[50%] tablet:hidden"
         src="/assets/images/bg-pattern-how-we-work-mobile.svg"
         alt="Pattern"
       />
@@ -16,7 +16,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 
       <!--  desktop-->
       <img
-        class="absolute top-0 right-0 h-full max-w-[50%] hidden md:block"
+        class="absolute top-0 right-0 h-full max-w-[50%] hidden tablet:block"
         src="/assets/images/bg-pattern-how-we-work-desktop.svg"
         alt="Pattern"
       />
@@ -24,14 +24,14 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
       <!--  end pattern-->
 
       <div
-        class="container my-32 flex flex-col items-center justify-center gap-16 sm:my-40 lg:items-start"
+        class="my-24 flex flex-col items-center justify-center gap-16 desktop:justify-between desktop:flex-row desktop:px-20"
       >
-        <h1 class="text-inverted text-center text-5xl font-heading md:text-6xl">
-          Find out more about how we work
+        <h1 class="text-inverted text-center text-5xl font-heading desktop:text-left">
+          Find out more <br class="hidden desktop:inline"> about how we work
         </h1>
 
         <a
-          class="btn btn-outline-white text-inverted uppercase px-6 font-bold"
+          class="btn btn-outline-white text-inverted uppercase px-6 font-bold z-40"
           href="#"
           >How we work</a
         >

@@ -1,146 +1,99 @@
-<footer class='relative container--large'>
-  <!--  pattern-->
-  <!-- mobile -->
-  <img class='absolute lg:hidden' src='/assets/images/bg-pattern-footer-mobile.svg' alt='Pattern'>
-  <!-- end mobile -->
+<footer class='bg-gray-100 '>
+  <div class="relative container-large">
 
-  <!-- desktop -->
-  <img class='absolute hidden lg:block' src='/assets/images/bg-pattern-footer-desktop.svg' alt='Pattern'>
-  <!-- end desktop -->
+    <!-- pattern mobile -->
+    <img class='absolute desktop:hidden' src='/assets/images/bg-pattern-footer-mobile.svg' alt='Pattern'>
+    <!-- end pattern mobile -->
 
-  <!--  end pattern-->
-
-
-  <div class='container flex flex-col items-center justify-center py-32'>
-
-    <div class='w-full flex flex-col gap-10 items-center lg:flex-row lg:justify-between'>
-      <!--   logo -->
-      <div>
-        <img src='/assets/images/logo.svg' alt='Logo'>
-      </div>
-      <!--   end logo -->
+    <!-- pattern desktop -->
+    <img class='absolute z-0 hidden desktop:block' src='/assets/images/bg-pattern-footer-desktop.svg' alt='Pattern'>
+    <!-- end pattern desktop -->
 
 
-      <!--    socials-->
-      <ul class='flex gap-4 items-center'>
-        <!--      facebook-->
-        <li>
-          <a href='#'>
-            <img src='/assets/images/icon-facebook.svg' alt='Facebook'>
-          </a>
-        </li>
-        <!--      end facebook-->
+    <div class='container z-50 flex flex-col items-center justify-center py-32 desktop:py-14'>
 
-        <!--      twitter-->
-        <li>
-          <a href='#'>
-            <img src='/assets/images/icon-twitter.svg' alt='Twitter'>
-          </a>
-        </li>
-        <!--      end twitter-->
+      <div class='flex flex-col items-center w-full gap-10 desktop:flex-row desktop:justify-between'>
+        <!--   logo -->
+        <a href="#" class="z-50">
+          <img src='/assets/images/logo.svg' alt='Logo'>
+        </a>
+        <!--   end logo -->
 
-        <!--      pinterest-->
-        <li>
-          <a href='#'>
-            <img src='/assets/images/icon-pinterest.svg' alt='Pinterest'>
-          </a>
-        </li>
-        <!--      end pinterest-->
 
-        <!--      instagram-->
-        <li>
-          <a href='#'>
-            <img src='/assets/images/icon-instagram.svg' alt='Instagram'>
-          </a>
-        </li>
-        <!--      end instagram-->
-      </ul>
-      <!--    end socials-->
-    </div>
-
-    <!--    line decorate-->
-    <div class='h-[2px] bg-gray-300 w-full my-10'></div>
-    <!--    end line decorate-->
-
-    <div class='w-full flex flex-col gap-8 lg:flex-row lg:justify-between'>
-      <!--      out company-->
-      <div>
-        <p class='text-center text-muted uppercase tracking-wider font-medium lg:text-left'>Out Company</p>
-
-        <ul class='mt-6 uppercase text-gray-700 font-semibold flex flex-col items-center gap-2 lg:items-start'>
+        <!--    socials-->
+        <ul class="flex items-center gap-4 text-2xl">
           <li>
-            <a href='#'>How we work</a>
+            <a class="text-muted hover:text-black" href="#"><span class="fab fa-facebook-square"></span></a>
           </li>
           <li>
-            <a href='#'>Why insure?</a>
+            <a class="text-muted hover:text-black" href="#"><span class="fab fa-twitter"></span></a>
           </li>
           <li>
-            <a href='#'>Check price</a>
+            <a class="text-muted hover:text-black" href="#"><span class="fab fa-pinterest"></span></a>
           </li>
           <li>
-            <a href='#'>Reviews</a>
+            <a class="text-muted hover:text-black" href="#"><span class="fab fa-instagram"></span></a>
           </li>
         </ul>
+        <!--    end socials-->
       </div>
-      <!--      end out company-->
 
-      <!--      help me-->
-      <div>
-        <p class='text-muted text-center uppercase tracking-wider font-medium lg:text-left'>Help me</p>
+      <!--    line decorate-->
+      <div class='h-[2px] bg-black/20 w-full my-10 desktop:bg-black/10'></div>
+      <!--    end line decorate-->
 
-        <ul class='mt-6 uppercase text-gray-700 font-semibold flex flex-col items-center gap-2 lg:items-start'>
-          <li>
-            <a href='#'>faq</a>
-          </li>
-          <li>
-            <a href='#'>Terms of use</a>
-          </li>
-          <li>
-            <a href='#'>Privacy policy</a>
-          </li>
-          <li>
-            <a href='#'>Cookies</a>
-          </li>
-        </ul>
+
+      <!-- links -->
+      <div class='flex flex-col w-full gap-8 lg:flex-row lg:justify-between'>
+        <!--      out company-->
+        <div class="link-group">
+          <p>Out Company</p>
+          <ul>
+            <li> <a href='#'>How we work</a> </li>
+            <li> <a href='#'>Why insure?</a> </li>
+            <li> <a href='#'>Check price</a> </li>
+            <li> <a href='#'>Reviews</a> </li>
+          </ul>
+        </div>
+        <!--      end out company-->
+
+        <!--      help me-->
+        <div class="link-group">
+          <p>Help me</p>
+          <ul>
+            <li> <a href='#'>faq</a> </li>
+            <li> <a href='#'>Terms of use</a> </li>
+            <li> <a href='#'>Privacy policy</a> </li>
+            <li> <a href='#'>Cookies</a> </li>
+          </ul>
+        </div>
+        <!--      end help me-->
+
+        <!--      contact-->
+        <div class="link-group">
+          <p>Contact</p>
+          <ul>
+            <li> <a href='#'>Sales</a> </li>
+            <li> <a href='#'>Support</a> </li>
+            <li> <a href='#'>Live chat</a> </li>
+          </ul>
+        </div>
+        <!--      end end contact-->
+
+        <!--      others-->
+        <div class="link-group">
+          <p>Others</p>
+
+          <ul>
+            <li> <a href='#'>Careers</a> </li>
+            <li> <a href='#'>Press</a> </li>
+            <li> <a href='#'>Licenses</a> </li>
+          </ul>
+        </div>
+        <!--      end end others-->
+
       </div>
-      <!--      end help me-->
-
-      <!--      contact-->
-      <div>
-        <p class='text-muted text-center uppercase tracking-wider font-medium lg:text-left'>Contact</p>
-
-        <ul class='mt-6 uppercase text-gray-700 font-semibold flex flex-col items-center gap-2 lg:items-start'>
-          <li>
-            <a href='#'>Sales</a>
-          </li>
-          <li>
-            <a href='#'>Support</a>
-          </li>
-          <li>
-            <a href='#'>Live chat</a>
-          </li>
-        </ul>
-      </div>
-      <!--      end end contact-->
-
-      <!--      others-->
-      <div>
-        <p class='text-muted text-center uppercase tracking-wider font-medium lg:text-left'>Others</p>
-
-        <ul class='mt-6 uppercase text-gray-700 font-semibold flex flex-col items-center gap-2 lg:items-start'>
-          <li>
-            <a href='#'>Careers</a>
-          </li>
-          <li>
-            <a href='#'>Press</a>
-          </li>
-          <li>
-            <a href='#'>Licenses</a>
-          </li>
-        </ul>
-      </div>
-      <!--      end end others-->
-
+      <!-- links -->
     </div>
   </div>
 </footer>

@@ -28,9 +28,14 @@ module.exports = {
         // lg: '4rem',
         // xl: '5rem',
         // '2xl': '6rem'
+        desktop: "0rem",
       },
     },
     extend: {
+      screens: {
+        tablet: "768px",
+        desktop: "1200px",
+      },
       // create custom fonts here
       fontFamily: {
         heading: "'DM Serif Display', 'serif'",
@@ -47,6 +52,7 @@ module.exports = {
         fill: withOpacity("--bg-fill"),
         dark: withOpacity("--bg-dark"),
         intro: withOpacity("--bg-intro"),
+        footer: withOpacity("--bg-footer"),
       },
     },
   },
@@ -54,5 +60,16 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        ".container": {
+          maxWidth: "100%",
+          "@screen desktop": {
+            maxWidth: "1200px",
+          },
+        },
+      });
+    },
+  ],
 };

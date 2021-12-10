@@ -2,27 +2,27 @@
 <header>
   <div class='container'>
     <!--    navbar mobile-->
-    <nav [class.invisible]='isActiveNavbar' class='flex items-center justify-between py-6'>
+    <nav class='flex items-center justify-between py-6'>
       <div>
         <img src='/assets/images/logo.svg' alt='Logo'>
       </div>
 
       <!--    hamburger-->
-      <div (click)='isActiveNavbar = true' class='cursor-pointer md:hidden'>
+      <div (click)='isActive = true' class='cursor-pointer desktop:hidden'>
         <img src='/assets/images/icon-hamburger.svg' alt='Hamburger'>
       </div>
       <!--    end hamburger-->
 
       <!--      links-->
-      <ul class='flex items-center hidden gap-8 font-medium tracking-wider uppercase text-muted md:flex'>
+      <ul class='items-center hidden gap-8 font-semibold tracking-wider uppercase text-muted desktop:flex'>
         <li>
-          <a href='#'>How work</a>
+          <a class="hover:font-black" href='#'>How work</a>
         </li>
         <li>
-          <a href='#'>Blog</a>
+          <a class="hover:font-black" href='#'>Blog</a>
         </li>
         <li>
-          <a href='#'>Account</a>
+          <a class="hover:font-black" href='#'>Account</a>
         </li>
         <li><a class='btn btn-outline-dark' href='#'>View Plans</a></li>
       </ul>
@@ -32,3 +32,50 @@
   </div>
 </header>
 <!--end header-->
+
+
+
+<!--modal open navbar-->
+<header *ngIf="isActive" class="fixed top-0 left-0 z-50 w-full h-screen bg-dark">
+  <nav class="py-6 bg-fill">
+    <div class="container flex items-center justify-between">
+      <div>
+        <img src="/assets/images/logo.svg" alt="Logo" />
+      </div>
+
+      <!--    hamburger-->
+      <div (click)="isActive = false" class="cursor-pointer">
+        <img src="/assets/images/icon-close.svg" alt="Close" />
+      </div>
+      <!--    end hamburger-->
+    </div>
+  </nav>
+
+  <!--    links-->
+  <div class="relative h-full ">
+    <div class="container grid justify-items-center">
+      <!--        pattern-->
+      <img class="absolute bottom-0 left-0 max-h-[450px] object-cover object-center w-full"
+        src="/assets/images/bg-pattern-mobile-nav.svg" alt="Pattern" />
+      <!--        end pattern-->
+
+      <ul
+        class="grid w-full max-w-md gap-10 mt-16 text-lg font-semibold tracking-widest text-center uppercase text-inverted">
+        <li>
+          <a href="#">How we work</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">Account</a>
+        </li>
+        <li class="w-full">
+          <a class="block btn btn-outline-white" href="#">View plans</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--    end links-->
+</header>
+<!--end modal open navbar-->
