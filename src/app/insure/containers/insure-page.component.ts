@@ -1,23 +1,21 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import * as fromData from '../data';
-import { Different } from '../models';
+import { Feature } from '../models';
 
 @Component({
-  selector: 'lbk-home-page',
+  selector: 'lbk-insure-page',
   template: `
     <main>
       <lbk-intro></lbk-intro>
 
-      <lbk-different-list
-        [differences]="(differences$ | async)!"
-      ></lbk-different-list>
+      <lbk-feature-list [features]="(features$ | async)!"></lbk-feature-list>
 
       <lbk-how-we-work></lbk-how-we-work>
     </main>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomePageComponent {
-  differences$: Observable<Different[]> = of(fromData.differences);
+export class InsurePageComponent {
+  features$: Observable<Feature[]> = of(fromData.features);
 }

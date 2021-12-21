@@ -1,6 +1,6 @@
-import { Different } from './models';
+import { Feature } from './models';
 
-export const differences: Different[] = [
+export const features: Feature[] = [
   {
     src: '/assets/images/icon-snappy-process.svg',
     name: 'Snappy Process',
