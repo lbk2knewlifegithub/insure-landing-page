@@ -41,9 +41,11 @@
 <header *ngIf="isActive" class="fixed top-0 left-0 z-50 w-full h-screen bg-dark">
   <nav class="py-6 bg-fill">
     <div class="container flex items-center justify-between">
-      <div>
+      <!-- logo -->
+      <a routerLink="/">
         <img src="/assets/images/logo.svg" alt="Logo" />
-      </div>
+      </a>
+      <!-- end logo -->
 
       <!--    hamburger-->
       <div (click)="isActive = false" class="cursor-pointer">
@@ -64,13 +66,13 @@
       <ul
         class="grid w-full max-w-md gap-10 mt-16 text-lg font-semibold tracking-widest text-center uppercase text-inverted">
         <li>
-          <a href="#">How we work</a>
+          <a class="hover:border-b-4" routerLink="/">How work</a>
         </li>
         <li>
-          <a href="#">Blog</a>
+          <a class="hover:border-b-4" routerLink="/">Blog</a>
         </li>
         <li>
-          <a href="#">Account</a>
+          <a class="hover:border-b-4" routerLink="/">Account</a>
         </li>
         <li class="w-full">
           <a class="block btn btn-outline-white" href="#">View plans</a>
